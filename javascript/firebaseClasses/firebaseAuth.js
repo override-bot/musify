@@ -72,13 +72,13 @@ function initApp() {
 
         if (user) {
 
-            window.location.href = '../html/index.html';
+            window.location.href = '../html/signIn.html';
 
         }
 
     });
     document.getElementById('signin').addEventListener('click', toggleSignIn, false);
-    //document.getElementById('signup').addEventListener('click', handleSignUp, false);
+    document.getElementById('signup').addEventListener('click', handleSignUp, false);
 
 }
 
