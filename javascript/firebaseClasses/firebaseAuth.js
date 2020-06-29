@@ -30,9 +30,9 @@ function handleSignUp() {
 
 function toggleSignIn() {
     if (firebase.auth().currentUser) {
-        // [START signout]
+
         firebase.auth().signOut();
-        // [END signout]
+
     } else {
         var email = document.getElementById('email2').value;
         var password = document.getElementById('password2').value;
@@ -44,13 +44,12 @@ function toggleSignIn() {
             alert('Please enter a password.');
             return;
         }
-        // Sign in with email and pass.
-        // [START authwithemail]
+
         firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-            // Handle Errors here.
+
             var errorCode = error.code;
             var errorMessage = error.message;
-            // [START_EXCLUDE]
+
             if (errorCode === 'auth/wrong-password') {
                 alert('Wrong password.');
             } else {
@@ -58,10 +57,10 @@ function toggleSignIn() {
             }
             console.log(error);
 
-            // [END_EXCLUDE]
+
         });
 
-        // [END authwithemail]
+
     }
 
 }
@@ -72,7 +71,7 @@ function initApp() {
 
         if (user) {
 
-            window.location.href = '../html/signIn.html';
+            window.location.href = '../html/player.html';
 
         }
 
