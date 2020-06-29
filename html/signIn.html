@@ -1,0 +1,41 @@
+<html>
+<script defer src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+<script defer src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+
+
+
+
+<head>
+    <title>
+        Sign In
+    </title>
+    <link rel="stylesheet" href="..\css\styles.css">
+</head>
+
+<body onload="initApp()">
+    <div class="large"><br/><br/>
+        <div class="circle"></div><br/><br/><br/>
+        <form><br/>
+            <p class="p">Email:</p>
+            <input type="email" placeholder="Input Email" id="email2" name="email"><br/><br/>
+            <p class="p">Password:</p>
+            <input type="password" id="password" name="password2"><br/><br/><br/>
+            <button id="signin">LOGIN</button><br/>
+            <p class="pp">New To Musify
+                <a href="signup.html">Register</a>
+            </p>
+        </form>
+        <br/>
+
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+    <script defer src="init-firebase.js"></script>
+    <script src="..\javascript\firebaseClasses\firebaseAuth.js"></script>
+
+
+
+</body>

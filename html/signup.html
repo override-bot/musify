@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="..\css\styles.css">
 </head>
 
-<body>
+<body onload="initApp()">
     <div class="large"><br/><br/>
         <div class="circle"></div><br/><br/><br/>
         <form><br/>
@@ -24,7 +24,7 @@
             <input type="email" placeholder="Input Email" id="email" name="email"><br/><br/>
             <p class="p">Password:</p>
             <input type="password" id="password" name="password"><br/><br/><br/>
-            <button onclick="handleSignUp()">CREATE ACCOUNT</button><br/>
+            <button onclick="handleSignUp()" id="signup">CREATE ACCOUNT</button><br/>
             <p class="pp">Already a member? <a href="signin.html">Login</a></p>
         </form>
         <br/>
