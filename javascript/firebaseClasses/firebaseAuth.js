@@ -26,7 +26,18 @@ function handleSignUp() {
 
 }
 
+//writeUserData(userId, name, email)
 
+function writeUserData(userId, name, email) {
+    var email = user.email
+    var name = document.getElementById('username');
+    firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email
+    });
+
+
+}
 
 function toggleSignIn() {
     if (firebase.auth().currentUser) {

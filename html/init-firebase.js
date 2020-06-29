@@ -11,4 +11,5 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-//var database = firebase.database();
+// Get a reference to the database service
+var database = firebase.database();
